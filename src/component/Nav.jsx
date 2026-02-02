@@ -1,9 +1,9 @@
 import React from 'react'
 
-const nav = () => {
+const Nav = () => {
   return (
-    <div>nav</div>
+    <nav>Nav</nav>
   )
 }
 
-export default nav
+export default Nav
