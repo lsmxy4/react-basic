@@ -1,13 +1,11 @@
-.container{
+.container {
   background-color: aliceblue;
-  border:  3px solid #000;
+  border: 3px solid #000;
 }
-
-h1{
-  background-color: red;
+header {
+  background-color: rgb(166, 221, 255);
 }
-
 aside{
   background-color: salmon;
-  color: #fff;
+  color:#fff
 }
