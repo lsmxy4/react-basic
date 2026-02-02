@@ -1,13 +1,16 @@
 import './App.css'
 import Header from './components/Header'
-
+import Aside from './components/Aside'
 function App() {
+
 
   return (
     <div className='container'>
       <Header/>
-      <h1>hello react!</h1>
+      <Aside/>
+      <h2>hello react!!!!</h2>
     </div>
+
   )
 }
 
