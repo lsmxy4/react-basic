@@ -1,0 +1,37 @@
+.main {
+  flex: 1;
+  padding: 40px;
+  background-color: #2fb36d;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main ul{
+  list-style: none;
+}
+
+.main h1{
+    font-size: 80px;
+}
+
+.tech-list {
+  display: flex;
+  gap: 20px;
+}
+
+.tech-item {
+  background: #fff;
+  color: #000;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.tech-item img {
+  width: 60px;
+  margin-bottom: 10px;
+}

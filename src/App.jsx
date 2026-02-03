@@ -1,18 +1,19 @@
 import './App.css'
 import Main from './components/Main'
-import Article from './components/Article'
-import Section from './components/Section'
 import Header from './components/Header'
+import Aside from './components/Aside'
+import Footer from './components/Footer'
 
 function App() {
 
   return (
     <div>
-      <Header/>
-      <Section/>
-      <Article/>
-      <h1>hello react</h1>
-      <Main />
+      <Header />
+      <div className="layout">
+        <Aside />
+        <Main />
+      </div>
+      <Footer/>
     </div>
   )
 }

@@ -1,0 +1,5 @@
+.layout {
+  background-color: lightgreen;
+  display: flex;
+  min-height: calc(100vh - 160px);
+}

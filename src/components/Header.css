@@ -1,25 +1,29 @@
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 20px 40px;
+  background-color: #f25c2a; /* 이미지 느낌 */
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
 }
 
 .navList {
-    list-style: none;
-    display: flex;
-    text-align: center;
-    gap: 10px;
+  display: flex;
+  gap: 20px;
+
+  background: #fbe3d5;
+  padding: 10px 20px;
+  border-radius: 4px;
 }
 
 .navList li {
-    background-color: aliceblue;
-    padding: 10px;
-}
-
-.navList li span {
-    display: block;
-}
-
-.navList li span.dec {
-    font-size: 10px;
+  list-style: none;
+  font-size: 16px;
+  cursor: pointer;
 }
