@@ -1,17 +1,19 @@
 import './App.css'
-import Nav from './component/nav'
-import Aside from './component/Aside'
-import Footer from './component/Footer'
+import Main from './components/Main'
+import Article from './components/Article'
+import Section from './components/Section'
+import Header from './components/Header'
 
 function App() {
 
   return (
-    <>
-    <h1>hi react!</h1>
-    <Nav />
-    <Aside/>
-    <Footer/>
-    </>
+    <div>
+      <Header/>
+      <Section/>
+      <Article/>
+      <h1>hello react</h1>
+      <Main />
+    </div>
   )
 }
 
