@@ -2,6 +2,7 @@ import './App.css'
 import Button from './assets/component/Button'
 import Main from './assets/component/Main'
 import Section from './assets/component/Section'
+import Input from './assets/component/Input'
 
 function App() {
 
@@ -11,8 +12,19 @@ function App() {
   }
 
 
+  const handlechange=(value)=>{
+        console.log('입력중',value)
+    }
+
   return (
     <>
+      <Input 
+      inputValue = {'hello react'}
+      title = {'input title'}
+      placeholder = {'입력요망'}
+      onChange={handlechange}
+      />
+      <hr />
       {/* <Section data ={'sectionData'}/> */}
       <Section {...sectionData} />
       <hr />
