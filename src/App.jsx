@@ -1,20 +1,33 @@
 import './App.css'
-import Main from './components/Main'
-import Header from './components/Header'
-import Aside from './components/Aside'
-import Footer from './components/Footer'
+import Button from './assets/component/Button'
+import Main from './assets/component/Main'
+import Section from './assets/component/Section'
 
 function App() {
 
+  const sectionData = {
+    content: '데이터',
+    bgColor: 'skyBlue'
+  }
+
+
   return (
-    <div>
-      <Header />
-      <div className="layout">
-        <Aside />
-        <Main />
-      </div>
-      <Footer/>
-    </div>
+    <>
+      {/* <Section data ={'sectionData'}/> */}
+      <Section {...sectionData} />
+      <hr />
+      <Main content={'Main'} bgcolor={'yellow'} />
+      <hr />
+      <Button text={'메일'} color={'red'} />
+      <Button text={'카페'} color={'blue'} >
+        <span>자식요소blue</span>
+      </Button>
+      <Button text={'블로그'} color={'green'}>
+        <span>자식요소graan</span>
+      </Button>
+      <Button text={'블로그'} />
+      <h1>hello react</h1>
+    </>
   )
 }
 
