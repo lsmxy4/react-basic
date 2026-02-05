@@ -1,33 +1,31 @@
 import './App.css'
-import InputCard from './assets/component/InputCard';
-import MenuButton from './assets/component/MenuButton'
+import Counter from './assets/component/Counter'
+import Exam1 from './assets/component/Exam1'
+import Exam2 from './assets/component/Exam2'
+import Exam3 from './assets/component/Exam3'
+import InputFocus from './assets/component/InputFocus'
+import Counter2 from './assets/component/Counter2'
 
 function App() {
+    const user={
+    name:'Alice',
+    age:21
+  }
 
-  const menus = [
-    { id: 1, label: "메일", color: "red" },
-    { id: 2, label: "카페", color: "blue" },
-    { id: 3, label: "블로그", color: "green" },
-  ];
-
-  const inputInfo = {
-    title: "검색",
-    placeholder: "검색어를 입력하세요",
-  };
-
-  return (
-    <>
-      <div>
-
-        <h1>메뉴</h1>
-
-        {menus.map((menu) => (
-          <MenuButton key={menu.id} {...menu} />
-        ))}
-        <InputCard {...inputInfo} />
-      </div>
-    </>
-  )
+return (
+  <>
+    <div>
+      <h2>useStatus 연습</h2>
+      <InputFocus/>
+      <Counter2/>
+      <hr />
+      <Exam3 />
+      <Exam1 name={user.name} age={user.age}/>
+      <Exam2 />
+      <Counter />
+    </div>
+  </>
+)
 }
 
 export default App
