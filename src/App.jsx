@@ -1,10 +1,14 @@
 import React from 'react'
-import Parent from './assets/component/Parent'
+import SquareCale from './assets/component/SquareCale'
+import SortableList from './assets/component/SortableList'
+import PersonList from './assets/component/PersonList'
 
 const App = () => {
   return (
     <div>
-      <Parent/>
+      <PersonList/>
+      <SquareCale/>
+      <SortableList/>
     </div>
   )
 }
