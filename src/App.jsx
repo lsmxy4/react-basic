@@ -1,16 +1,15 @@
 import React from 'react'
-import UserList from './assets/component/UserList'
-import PostList from './assets/component/PostList'
 import UserDetail from './assets/component/UserDetail'
+import './App.css'
 
 
 const App = () => {
   return (
-    <div>
-      <h1>axios</h1>
-      {/* <UserList/> */}
-      {/* <PostList/> */}
-      <UserDetail/>
+    <div className="app-container">
+      <div className="card">
+        <h1>axios</h1>
+        <UserDetail />
+      </div>
     </div>
   )
 }

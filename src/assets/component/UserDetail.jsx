@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import './UserDetail.css'
 import axios from 'axios'
 
 const UserDetail = () => {
@@ -9,7 +10,7 @@ const UserDetail = () => {
 
     useEffect(() => {
         setLoading(true)
-        axios.get(`https://jsonplaceholder.typicode.com/users/${userId}`)
+        axios.get(`https://dummyjson.com/users/${userId}`)
             .then((res) => {
                 setUser(res.data)
                 setLoading(false)
@@ -17,16 +18,18 @@ const UserDetail = () => {
     }, [userId])
 
     return (
-        <div>
+        <div className='card-style'>
             <h2>사용자 상세</h2>
-            <button onClick={() => setUserId(1)}>1번 사용자</button>
-            <button onClick={() => setUserId(2)}>2번 사용자</button>
-            <button onClick={() => setUserId(3)}>3번 사용자</button>
+            <div className="button-group">
+                <button onClick={() => setUserId(1)}>1번</button>
+                <button onClick={() => setUserId(2)}>2번</button>
+                <button onClick={() => setUserId(3)}>3번</button>
+            </div>
 
             {loading && <p>로딩중</p>}
             {user && (
-                <div>
-                    <p>이름: {user.name}</p>
+                <div className='printer'>
+                    <p>이름: {user.firstName} {user.lastName}</p>
                     <p>이메일: {user.email}</p>
                     <p>회사명: {user.company.name}</p>
                 </div>
